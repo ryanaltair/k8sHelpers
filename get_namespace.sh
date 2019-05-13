@@ -1,0 +1,1 @@
+./../bin/kubectl --kubeconfig=./../suanpan.conf  get ns

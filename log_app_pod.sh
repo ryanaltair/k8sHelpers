@@ -1,0 +1,2 @@
+apppod=$(./../bin/kubectl --kubeconfig=./../suanpan.conf  get pods -n user-user-public -l type=server -o custom-columns=NAME:metadata.name | grep app)
+./../bin/kubectl --kubeconfig=./../suanpan.conf  logs -f ${apppod} -n user-user-public
